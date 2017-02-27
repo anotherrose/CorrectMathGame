@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class GameActivity extends AppCompatActivity {
-    private int x;
+ /*   private int x;
     private String myText;
     private Handler myHandler;
     private TextView myScore;
@@ -16,14 +16,15 @@ public class GameActivity extends AppCompatActivity {
     private Button randomScoreButton = (Button) findViewById(R.id.btnRandomOne);
     private Button randomDifficultyButton = (Button) findViewById(R.id.btnRandomTwo);
     private Button randomTextButton = (Button) findViewById(R.id.btnRandomThree);
-    @Override
+*/
+ @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
 
     }
 
-
+/*
 
     private void generateNumber(){
         for(int i=0; i<50; i++){
@@ -60,4 +61,5 @@ public class GameActivity extends AppCompatActivity {
         };
         new Thread(myRunnable).start();
     }
+    */
 }

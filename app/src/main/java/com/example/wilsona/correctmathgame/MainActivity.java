@@ -21,15 +21,14 @@ import android.widget.Button;
 
 import java.io.IOException;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
+public class MainActivity extends AppCompatActivity {
     private Handler myHandler;
     long startTime;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+ /*       Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         startTime = System.currentTimeMillis();
@@ -56,13 +55,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         .setAction("Action", null).show();
             }
         });
+*/
+ //       Button play = (Button) findViewById(R.id.btnPlay);
+   //     play.setOnClickListener(this);
+    /*
+        Button btnGame = (Button) findViewById(R.id.btnPlay);
 
-        Button play = (Button) findViewById(R.id.btnPlay);
-        play.setOnClickListener(this);
+        btnGame.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                play(view);
+            }
+        });
+        */
     }
-
-    @Override
-    public void onClick(View v) {
+    public void play(View v) {
         Intent i =new Intent(this, GameActivity.class);
         startActivity(i);
     }
