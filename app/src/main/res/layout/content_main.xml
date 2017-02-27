@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Math Game"
+        android:text="Memory Game"
         android:id="@+id/textView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="56dp" />
@@ -25,28 +25,41 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="play"
-        android:id="@+id/btnPLAy"
-        android:layout_marginTop="103dp"
-        android:layout_below="@+id/textView"
+        android:id="@+id/btnPlay"
+        android:layout_above="@+id/btnQuit"
         android:layout_alignLeft="@+id/btnQuit"
-        android:layout_alignStart="@+id/btnQuit" />
+        android:layout_alignStart="@+id/btnQuit"
+        android:onClick="onClick (MainActivity)" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="High Scores"
-        android:id="@+id/btnHighScores"
-        android:layout_marginTop="27dp"
-        android:layout_below="@+id/btnPLAy"
-        android:layout_alignLeft="@+id/btnPLAy"
-        android:layout_alignStart="@+id/btnPLAy" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Quite"
+        android:text="Quit"
         android:id="@+id/btnQuit"
-        android:layout_marginTop="27dp"
-        android:layout_below="@+id/btnHighScores"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgTitle"
+        android:src="@android:drawable/sym_def_app_icon"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="27dp"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_above="@+id/txtHi" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Hi Score: "
+        android:id="@+id/txtHi"
+        android:layout_above="@+id/btnPlay"
+        android:layout_alignLeft="@+id/imgTitle"
+        android:layout_alignStart="@+id/imgTitle" />
+
 </RelativeLayout>

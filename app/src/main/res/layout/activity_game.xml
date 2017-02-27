@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.wilsona.correctmathgame.GameActivity"
+    android:id="@+id/kcv">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Score:"
+        android:id="@+id/txtScore"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Difficulty: "
+        android:id="@+id/txtDifficulty"
+        android:layout_below="@+id/txtScore"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Watch/Go"
+        android:id="@+id/txtWatch"
+        android:layout_below="@+id/txtDifficulty"
+        android:layout_alignLeft="@+id/txtDifficulty"
+        android:layout_alignStart="@+id/txtDifficulty" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Random Score"
+        android:id="@+id/btnRandomOne"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/txtWatch"
+        android:layout_centerHorizontal="true"
+        android:onClick="doRandomOne" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Random Difficulty"
+        android:id="@+id/btnRandomTwo"
+        android:layout_below="@+id/btnRandomOne"
+        android:layout_alignLeft="@+id/btnRandomOne"
+        android:layout_alignStart="@+id/btnRandomOne"
+        android:layout_marginTop="30dp"
+        android:onClick="doRandomeTwo" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Random Score"
+        android:id="@+id/button5"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/txtWatch"
+        android:layout_centerHorizontal="true"
+        android:onClick="doRandomOne" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Random Score"
+        android:id="@+id/button3"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/txtWatch"
+        android:layout_centerHorizontal="true"
+        android:onClick="doRandomOne" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Random Score"
+        android:id="@+id/button2"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/txtWatch"
+        android:layout_centerHorizontal="true"
+        android:onClick="doRandomOne" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Random Score"
+        android:id="@+id/button"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/txtWatch"
+        android:layout_centerHorizontal="true"
+        android:onClick="doRandomOne" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="random text"
+        android:id="@+id/btnRandomThree"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btnRandomTwo"
+        android:layout_alignLeft="@+id/btnRandomTwo"
+        android:layout_alignStart="@+id/btnRandomTwo"
+        android:onClick="doRandomThree" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button4"
+        android:layout_below="@+id/btnRandomThree"
+        android:layout_alignLeft="@+id/btnRandomThree"
+        android:layout_alignStart="@+id/btnRandomThree"
+        android:layout_marginTop="30dp" />
+</RelativeLayout>
